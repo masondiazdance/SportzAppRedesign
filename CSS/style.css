@@ -3,10 +3,12 @@
     margin: auto;
     align-items: center;
     justify-content: center;
+    min-height: 95vh;
+    padding: 0px 100px;
 }
 
 body.appLanding {
-    background-image: linear-gradient(#2d7fb1, white) !important;
+    background-image: linear-gradient(#2d7fb1, rgb(171, 193, 253)) !important;
 }
 
 .navbar-nav {
@@ -86,4 +88,16 @@ h2 {
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 20px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .heroSection {
+        flex-direction: column;
+    }
+    .gameTypesection {
+        flex-direction: column;
+    }
+    .mainContainer {
+        flex-direction: column;
+    }
 }
